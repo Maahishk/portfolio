@@ -1,0 +1,119 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 224px;
+  padding-right: 224px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: black;
+  font-size: 16px;
+  background-image: radial-gradient(
+    circle at 2px 2px,
+    #e5e7e9 2px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  transition: background-color 1s linear;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+button {
+  background-color: black;
+  border-radius: 30px;
+  padding: 10px 16px 10px 16px;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.flex-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+}
+.flex-content .intro {
+  position: relative;
+}
+.flex-content .intro h1 {
+  color: #2b85ee;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", sans-serif;
+}
+.container .slider {
+  display: flex;
+  gap: 12px;
+}
+.container .slider .is_active {
+  font-weight: 600;
+}
+.bg-text {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  opacity: 0.3;
+  font-size: 128px;
+  font-weight: bold;
+  z-index: -1;
+}
+.cart-container {
+  width: 70%;
+  height: 614px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.cart {
+  border-radius: 18px;
+  padding: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(250, 156, 14, 0.1);
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+table {
+  width: 100%;
+}
+table tr {
+  height: 124px;
+}
+table img {
+  filter: grayscale(100%);
+  background: transparent;
+}
