@@ -108,12 +108,16 @@ button {
 }
 .cart {
   border-radius: 18px;
-  padding: 12px;
+  padding: 18px;
   overflow: hidden;
   cursor: pointer;
   &:hover {
     background-color: rgba(250, 156, 14, 0.1);
   }
+}
+.cart img {
+  width: 100%;
+  border-radius: 18px;
 }
 ::-webkit-scrollbar {
   width: 0px;
