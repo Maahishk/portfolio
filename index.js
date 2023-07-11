@@ -16,3 +16,22 @@ $(window).scroll(function () {
     $("body").css("background-color", "white");
   }
 });
+window.addEventListener("load", (event) => {
+  $("#experience").hide();
+});
+
+function setActive(e) {
+  console.log(e);
+  if (e == 1) {
+    $("#1").addClass("is_active");
+    $("#2").removeClass("is_active");
+    $("#experience").hide();
+    $("#education").show();
+  }
+  if (e == 2) {
+    $("#2").addClass("is_active");
+    $("#1").removeClass("is_active");
+    $("#experience").show();
+    $("#education").hide();
+  }
+}

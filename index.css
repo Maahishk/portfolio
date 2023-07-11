@@ -75,10 +75,16 @@ button {
 }
 .container .slider {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 12px;
 }
 .container .slider .is_active {
   font-weight: 600;
+  border-bottom: 2px solid black;
+}
+.container .slider p {
+  cursor: pointer;
 }
 .bg-text {
   position: absolute;
@@ -89,9 +95,10 @@ button {
   font-weight: bold;
   z-index: -1;
 }
+
 .cart-container {
   width: 70%;
-  height: 614px;
+  height: 644px;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -113,7 +120,30 @@ table {
 table tr {
   height: 124px;
 }
+table tr td {
+  align-items: center;
+}
 table img {
   filter: grayscale(100%);
   background: transparent;
+}
+.experience-cart {
+  width: 30%;
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: inset;
+}
+.experience-cart img {
+  width: 100%;
+  object-fit: contain;
+}
+#experience {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow: scroll;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 24px;
 }
